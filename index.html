@@ -45,6 +45,17 @@
 		              <rzslider rz-slider-model="heighslider.value" rz-slider-options="heighslider.options"></rzslider>
 		          </div>
 		        </div>
+		        <div class="row form-row colors">
+		          <div class="col-lg-3 col-md-3">
+		              <p  class="title">hair:</p>
+		          </div>
+		          <div class="col-lg-9 col-md-9">
+		            <div ng-repeat="clr in colors" class="color-block">
+		              <input type="radio" id="color{{clr.value}}" name="color" ng-model="$parent.chosecolor" ng-value="clr.value">
+		              <span for="color{{clr.value}}" class="color"><img src="img/colors/{{clr.color}}.jpg" alt="lion-{{clr.color}}"></span>
+		            </div>
+		          </div>
+		        </div>
       		</div>
       	</div>
 		<footer>
