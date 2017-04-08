@@ -1,0 +1,42 @@
+body {
+    background-image: url(../img/bg.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* header */
+header{
+    padding:20px;
+    background:rgba(0,0,0,0.2);
+}
+header .header-container{
+    display: table;
+    margin:0 auto;
+}
+header img{
+    height:100px;
+    margin:0 20px;
+    display: inline-block;
+    vertical-align:middle;
+}
+header h2{
+    color:#fff;
+    text-transform:uppercase;
+    display: inline-block;
+    vertical-align:middle;
+}
+/* content container */
+div#content{
+    background:rgba(0,0,0,0.2);
+}
+div#content .container{
+    background:rgba(255,255,255,0.5);
+    padding:40px;
+}
+div#content .container p{
+    font-size:20px;
+    text-transform:uppercase;
+    vertical-align:middle;
+    padding: 0 10px;
+}
