@@ -83,3 +83,53 @@ div#content .container p{
 .color-block input:checked + span img{
     box-shadow:0 0 5px 5px #000;
 }
+/* beard */
+.beards p,.bodies p{
+    padding:40px 0;
+}
+.beard-block{
+    float:left;
+    position:relative;
+    margin-right:30px;
+    width:100px;
+    height:150px;
+}
+.beard-block img{
+    width:100px;
+    top:0;
+    display:block;
+    position:absolute;
+    border:solid 1px #dedede;
+    padding:10px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.5);
+      -webkit-transition: all ease-out;
+     -moz-transition: all 10ms ease-out;
+       -o-transition: all 10ms ease-out;
+          transition: all 10ms ease-out;
+}
+.beard-block:hover img{
+    transform:rotateY(360deg) !important;
+    -webkit-transform:rotateY(360deg) !important;
+    -moz-transform:rotateY(360deg) !important;
+    -o-transform:rotateY(360deg) !important;
+      -webkit-transition: all ease-out;
+     -moz-transition: all 500ms ease-out;
+       -o-transition: all 500ms ease-out;
+          transition: all 500ms ease-out;
+}
+.beard-block input{
+    background:none !important;
+    width:100px;
+    height:150px;
+    padding:0;
+    opacity:0;
+    z-index:4;
+    margin:0;
+    position:absolute;
+    z-index:1;
+    color:transparent !important;
+} 
+.beard-block input:checked + span img{
+    box-shadow:0 0 5px 5px #000;
+}

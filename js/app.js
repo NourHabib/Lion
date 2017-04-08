@@ -39,5 +39,10 @@ mainApp.controller('lionCtrl', function($scope,$http) {
 		{color:"yellow",value:15},
 		{color:"wood",value:16}
 	];
+	$scope.hairs=[
+		{shape:'none',value: 1},
+		{shape:"short",value:2},
+		{shape:"long",value:3}
+	];
 
  });

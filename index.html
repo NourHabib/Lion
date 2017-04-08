@@ -56,6 +56,17 @@
 		            </div>
 		          </div>
 		        </div>
+		        <div class="row form-row hairs">
+		          <div class="col-lg-3 col-md-3">
+		              <p  class="title">hairlong:</p>
+		          </div>
+		          <div class="col-lg-9 col-md-9">
+		            <div ng-repeat="har in hairs" class="beard-block hairs-block">
+		              <input type="radio" id="hair{{bea.value}}" name="hair" ng-model="$parent.chosehair" ng-value="har.value">
+		              <span for="beard{{har.value}}" class="hair"><img src="img/hair/{{har.shape}}.png" alt="lion-{{har.shape}}"></span>
+		            </div>
+		          </div>
+		        </div>
       		</div>
       	</div>
 		<footer>
