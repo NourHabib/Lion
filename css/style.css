@@ -133,3 +133,38 @@ div#content .container p{
 .beard-block input:checked + span img{
     box-shadow:0 0 5px 5px #000;
 }
+/* button */
+.calculate button {
+    background:rgba(255, 255, 255, 0.5);
+    border-radius:50px;
+    display:table;
+    margin:20px auto;
+    padding: 5px 20px;
+    text-align:center;
+    overflow:hidden;
+}
+.calculate button img{
+    width:50px;
+    vertical-align:middle;
+    display:inline-block;
+    -webkit-transition: all ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+.calculate button p{
+    display:inline-block !important;
+    font-weight:bold;
+    margin: 0;
+    -webkit-transition: all ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+.calculate button:hover img{
+    transform:translate(75px);
+}
+.calculate button:hover p{
+   opacity:0;
+    transform:translate(70px);
+}
