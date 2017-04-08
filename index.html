@@ -67,6 +67,17 @@
 		            </div>
 		          </div>
 		        </div>
+		        <div class="row form-row eye">
+		          <div class="col-lg-3 col-md-3">
+		              <p  class="title">EyeColor:</p>
+		          </div>
+		          <div class="col-lg-9 col-md-9">
+		            <div ng-repeat="eclr in eyecolors" class="color-block">
+		              <input type="radio" id="ecolor{{eclr.value}}" name="eyecolor" ng-model="$parent.choseEye" ng-value="eclr.value">
+		              <span for="ecolor{{eclr.value}}" class="color"><img src="img/colors/{{eclr.color}}.jpg" alt="lion-{{eclr.color}}"></span>
+		            </div>
+		          </div>
+		        </div>
       		</div>
       	</div>
 		<footer>
