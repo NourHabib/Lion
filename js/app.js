@@ -2,7 +2,7 @@ var mainApp = angular.module("lionApp", ['rzModule']);
 
 mainApp.controller('lionCtrl', function($scope,$http) {
 
-
+  	$scope.lng = 0;
   	$scope.total=0;
   	$scope.chosecolor=0;
   	$scope.chosehair=0;
@@ -10,6 +10,11 @@ mainApp.controller('lionCtrl', function($scope,$http) {
   	$scope.chosebeard=0;
   	$scope.chosebody=0;
   	$scope.errors=0;
+
+  	/* Get Language Data */
+    $scope.lang = $http.get('/language.json').then(function(response) {
+           $scope.lang = response.data.lg;
+    });
 
  	$scope.ageslider = {
     	value: 20,
@@ -106,5 +111,13 @@ mainApp.controller('lionCtrl', function($scope,$http) {
 		$scope.result = 0;
 		$scope.errors = 0;
 	};
+
+	/* Language switcher */
+    $scope.langEng = function(){
+      $scope.lng=0;
+    };
+    $scope.langGerm = function(){
+      $scope.lng=1;
+    };
 
  });

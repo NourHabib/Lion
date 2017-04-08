@@ -1,0 +1,34 @@
+{
+  "lg":[
+        {
+          "header":"How many Lions for your friend?",
+          "age":"Age",
+          "height":"Height",
+          "hair":"Haircolor",
+          "eye":"Eyecolor",
+          "beard":"Beard",
+          "hairl":"Hairlong",
+          "body":"Body",
+          "cal":"Calculate",
+          "please":"Please fill all details!!",
+          "develop":"Develped By ",
+          "friend":"Your Friend worth",
+          "lion":"Lions"
+        },
+        {
+          "header":"Wie viele Lions für deinen Freund?",
+          "age":"Alter",
+          "height":"Höhe",
+          "hair":"Haarfarbe",
+          "eye":"Augenfarbe",
+          "beard":"Bart",
+          "hairl":"Langes Haar",
+          "body":"Körper",
+          "cal":"Berechnen",
+          "please":"Bitte füllen Sie alle Details aus!",
+          "develop":"Entwickelt von ",
+          "friend":"Ihr Freund wert",
+          "lion":"Löwen"
+        }
+      ]
+}

@@ -40,7 +40,7 @@
 	           <div class="row">
 	              <div class="header-container">
 	                <img src="img/logo.png" alt="Lion Calculator">
-	                <h2>how many lions for your frind?!</h2>
+	                <h2>{{lang[lng].header}}</h2>
 	              </div>
 	              <div class="lang-container">
 	                <ul>
@@ -56,7 +56,7 @@
       		<div class="container">
 	      		<div class="row form-row">
 		          <div class="col-lg-3 col-md-3">
-		              <p  class="title">age:</p>
+		              <p  class="title">{{lang[lng].age}}:</p>
 		          </div>
 		          <div class="col-lg-9 col-md-9">
 		              <rzslider rz-slider-model="ageslider.value" rz-slider-options="ageslider.options"></rzslider>
@@ -64,7 +64,7 @@
 		        </div>
 		        <div class="row form-row">
 		          <div class="col-lg-3 col-md-3">
-		              <p  class="title">height(cm):</p>
+		              <p  class="title">{{lang[lng].height}} (cm):</p>
 		          </div>
 		          <div class="col-lg-9 col-md-9">
 		              <rzslider rz-slider-model="heighslider.value" rz-slider-options="heighslider.options"></rzslider>
@@ -72,7 +72,7 @@
 		        </div>
 		        <div class="row form-row colors">
 		          <div class="col-lg-3 col-md-3">
-		              <p  class="title">hair:</p>
+		              <p  class="title">{{lang[lng].hair}}:</p>
 		          </div>
 		          <div class="col-lg-9 col-md-9">
 		            <div ng-repeat="clr in colors" class="color-block">
@@ -83,7 +83,7 @@
 		        </div>
 		        <div class="row form-row hairs">
 		          <div class="col-lg-3 col-md-3">
-		              <p  class="title">hairlong:</p>
+		              <p  class="title">{{lang[lng].hairl}}:</p>
 		          </div>
 		          <div class="col-lg-9 col-md-9">
 		            <div ng-repeat="har in hairs" class="beard-block hairs-block">
@@ -94,7 +94,7 @@
 		        </div>
 		        <div class="row form-row eye">
 		          <div class="col-lg-3 col-md-3">
-		              <p  class="title">EyeColor:</p>
+		              <p  class="title">{{lang[lng].eye}}:</p>
 		          </div>
 		          <div class="col-lg-9 col-md-9">
 		            <div ng-repeat="eclr in eyecolors" class="color-block">
@@ -105,7 +105,7 @@
 		        </div>
 		        <div class="row form-row beards">
 		          <div class="col-lg-3 col-md-3">
-		              <p  class="title">beard:</p>
+		              <p  class="title">{{lang[lng].beard}}:</p>
 		          </div>
 		          <div class="col-lg-9 col-md-9">
 		            <div ng-repeat="bea in beard" class="beard-block">
@@ -116,7 +116,7 @@
 		        </div>
 		        <div class="row form-row bodies">
 		          <div class="col-lg-3 col-md-3">
-		              <p class="title">body:</p>
+		              <p class="title">{{lang[lng].body}}:</p>
 		          </div>
 		          <div class="col-lg-9 col-md-9">
 		            <div ng-repeat="bod in bodies" class="body-block beard-block">
@@ -127,7 +127,7 @@
 		        </div>
 		        <div class="row form-row">
 		          <div class="calculate">
-		            <button ng-click="calculate()"><img src="img/button.png" alt="Lion-Calculate"><p>calculate</p></button>
+		            <button ng-click="calculate()"><img src="img/button.png" alt="Lion-Calculate"><p>{{lang[lng].cal}}</p></button>
 		          </div>
 		          <div ng-show="result"  class="result">
 			            <div class="result-inner">
@@ -136,12 +136,12 @@
 			                <img src="img/logo.png" alt="Lion Calculator">
 			              </div>
 			              <div ng-hide="errors" class="theresult">
-			                <p class="error">Your Friend worth</p>
+			                <p class="error">{{lang[lng].friend}}</p>
 			                <p>{{result | number : 0}}</p>
-			                <p class="error">Lions</p>
+			                <p class="error">{{lang[lng].lion}}</p>
 			              </div>
 			              <div ng-show="errors" class="theresult">
-			                <p class="error">Please fill all details</p>
+			                <p class="error">{{lang[lng].please}}</p>
 			              </div>
 			              <div ng-hide="errors" class="share">
 			                <ul>
@@ -159,7 +159,7 @@
         	</div>
       	</div>     	
       	<footer>
-			<p>Developed by Nour Habib</p>
+			<p>{{lang[lng].develop}} Nour Habib</p>
 		</footer>
 	</div>
 </body>
