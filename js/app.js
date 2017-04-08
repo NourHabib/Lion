@@ -62,5 +62,17 @@ mainApp.controller('lionCtrl', function($scope,$http) {
 		{color:"yellow",value:15},
 		{color:"wood",value:16}
 	];
-
+	$scope.beard=[
+		{shape:'none',value: 1},
+		{shape:"short",value:2},
+		{shape:"normal",value:3},
+		{shape:"long",value:4}
+	];
+	$scope.bodies=[
+		{shape:'thin',value: 1},
+		{shape:"fat",value:2},
+		{shape:"normal",value:3},
+		{shape:"shaped",value:4}
+	];
+	
  });

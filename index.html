@@ -78,6 +78,29 @@
 		            </div>
 		          </div>
 		        </div>
+		        <div class="row form-row beards">
+		          <div class="col-lg-3 col-md-3">
+		              <p  class="title">beard:</p>
+		          </div>
+		          <div class="col-lg-9 col-md-9">
+		            <div ng-repeat="bea in beard" class="beard-block">
+		              <input type="radio" id="color{{bea.value}}" name="beard" ng-model="$parent.chosebeard" ng-value="bea.value">
+		              <span for="beard{{bea.value}}" class="beard"><img src="img/beard/{{bea.shape}}.png" alt="lion-{{bea.shape}}"></span>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="row form-row bodies">
+		          <div class="col-lg-3 col-md-3">
+		              <p class="title">body:</p>
+		          </div>
+		          <div class="col-lg-9 col-md-9">
+		            <div ng-repeat="bod in bodies" class="body-block beard-block">
+		              <input type="radio" id="body{{bod.value}}" name="body" ng-model="$parent.chosebody" ng-value="bod.value">
+		              <span for="body{{bod.value}}" class="body"><img src="img/body/{{bod.shape}}.png" alt="lion-{{bod.shape}}"></span>
+		            </div>
+		          </div>
+		        </div>
+        </div>
       		</div>
       	</div>
 		<footer>
