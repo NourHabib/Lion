@@ -4,7 +4,12 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-
+input{
+    cursor: pointer;
+}
+*{
+    outline: none !important;
+}
 /* header */
 header{
     padding:20px;
@@ -168,9 +173,48 @@ div#content .container p{
    opacity:0;
     transform:translate(70px);
 }
-input{
-    cursor: pointer;
+/* result */
+.result {
+   position:fixed;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   background:rgba(0,0,0,0.5);
 }
-*{
-    outline: none !important;
+.result-inner{
+    max-width:500px;
+    position:relative;
+    display:table;
+    margin: 5% auto;
+    vertical-align:middle;
+    z-index: 9999999999;
+}
+.result-inner .logo,.result-inner .theresult{
+    display:block;
+    width:100%;
+}
+.result-inner img{
+    height:200px;
+    margin:0 auto;
+    display:block;
+}
+.result-inner p{
+    color:#fff;
+    font-size: 80px !important;
+    display:block;
+    width:100%;
+    text-align: center;
+    clear:both;
+}
+.result-inner p.error{
+    font-size: 40px !important;
+}
+.close {
+    position:fixed;
+    top:5%;
+    right:5%;
+    color:#fff;
+    opacity:1;
+    font-size:50px;
 }

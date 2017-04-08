@@ -1,6 +1,16 @@
 var mainApp = angular.module("lionApp", ['rzModule']);
 
 mainApp.controller('lionCtrl', function($scope,$http) {
+
+
+  	$scope.total=0;
+  	$scope.chosecolor=0;
+  	$scope.chosehair=0;
+  	$scope.choseEye=0;
+  	$scope.chosebeard=0;
+  	$scope.chosebody=0;
+  	$scope.errors=0;
+
  	$scope.ageslider = {
     	value: 20,
     	options: {
@@ -74,5 +84,23 @@ mainApp.controller('lionCtrl', function($scope,$http) {
 		{shape:"normal",value:3},
 		{shape:"shaped",value:4}
 	];
-	
+	$scope.calculate=function(){
+		if($scope.chosecolor && $scope.choseEye && $scope.chosebeard && $scope.chosebody  && $scope.chosehair){
+			$scope.total=$scope.ageslider.value+$scope.heighslider.value+$scope.choseEye+$scope.chosecolor+$scope.chosebeard+$scope.chosebody;
+			
+			$scope.chosecolor=0;
+		  	$scope.choseEye=0;
+		  	$scope.chosebeard=0;
+		  	$scope.chosebody=0;
+		  	$scope.chosehair=0;
+		  	$scope.ageslider.value=20;
+		  	$scope.heighslider.value=170;
+		  	
+			$scope.result = $scope.total/4;
+		}else{
+			$scope.errors=1;
+		}
+	};
+
+
  });
