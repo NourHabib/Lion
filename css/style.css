@@ -44,3 +44,42 @@ div#content .container p{
 .row.form-row{
     padding: 40px 0;
 }
+/* colors */
+.color-block{
+    float:left;
+    position:relative;
+    margin: 10px 10px 10px 0;
+    width:35px;
+    height:35px;
+}
+.color-block:hover img{
+    opacity:0.6;
+}
+.color-block img{
+    width:35px;
+    height:35px;
+    top:0;
+    display:block;
+    border-radius:50%;
+    position:absolute;
+    border:solid 1px #dedede;
+      -webkit-transition: all ease-out;
+     -moz-transition: all 500ms ease-out;
+       -o-transition: all 500ms ease-out;
+          transition: all 500ms ease-out;
+}
+.color-block input{
+    background:none !important;
+    width:35px;
+    height:35px;
+    padding:0;
+    opacity:0;
+    z-index:4;
+    margin:0;
+    position:absolute;
+    z-index:1;
+    color:transparent !important;
+} 
+.color-block input:checked + span img{
+    box-shadow:0 0 5px 5px #000;
+}
