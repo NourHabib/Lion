@@ -40,3 +40,7 @@ div#content .container p{
     vertical-align:middle;
     padding: 0 10px;
 }
+/* row form */
+.row.form-row{
+    padding: 40px 0;
+}
