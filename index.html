@@ -55,26 +55,26 @@
 	    <div id="content">
       		<div class="container">
 	      		<div class="row form-row">
-		          <div class="col-lg-3 col-md-3">
+		          <div class="col-lg-3 col-md-3 col-sm-3">
 		              <p  class="title">{{lang[lng].age}}:</p>
 		          </div>
-		          <div class="col-lg-9 col-md-9">
+		          <div class="col-lg-9 col-md-9 col-sm-9">
 		              <rzslider rz-slider-model="ageslider.value" rz-slider-options="ageslider.options"></rzslider>
 		          </div>
 		        </div>
 		        <div class="row form-row">
-		          <div class="col-lg-3 col-md-3">
+		          <div class="col-lg-3 col-md-3 col-sm-3">
 		              <p  class="title">{{lang[lng].height}} (cm):</p>
 		          </div>
-		          <div class="col-lg-9 col-md-9">
+		          <div class="col-lg-9 col-md-9 col-sm-9">
 		              <rzslider rz-slider-model="heighslider.value" rz-slider-options="heighslider.options"></rzslider>
 		          </div>
 		        </div>
 		        <div class="row form-row colors">
-		          <div class="col-lg-3 col-md-3">
+		          <div class="col-lg-3 col-md-3 col-sm-3">
 		              <p  class="title">{{lang[lng].hair}}:</p>
 		          </div>
-		          <div class="col-lg-9 col-md-9">
+		          <div class="col-lg-9 col-md-9 col-sm-9">
 		            <div ng-repeat="clr in colors" class="color-block">
 		              <input type="radio" id="color{{clr.value}}" name="color" ng-model="$parent.chosecolor" ng-value="clr.value">
 		              <span for="color{{clr.value}}" class="color"><img src="img/colors/{{clr.color}}.jpg" alt="lion-{{clr.color}}"></span>
@@ -82,10 +82,10 @@
 		          </div>
 		        </div>
 		        <div class="row form-row hairs">
-		          <div class="col-lg-3 col-md-3">
+		          <div class="col-lg-3 col-md-3 col-sm-3">
 		              <p  class="title">{{lang[lng].hairl}}:</p>
 		          </div>
-		          <div class="col-lg-9 col-md-9">
+		          <div class="col-lg-9 col-md-9 col-sm-9">
 		            <div ng-repeat="har in hairs" class="beard-block hairs-block">
 		              <input type="radio" id="hair{{bea.value}}" name="hair" ng-model="$parent.chosehair" ng-value="har.value">
 		              <span for="beard{{har.value}}" class="hair"><img src="img/hair/{{har.shape}}.png" alt="lion-{{har.shape}}"></span>
@@ -93,10 +93,10 @@
 		          </div>
 		        </div>
 		        <div class="row form-row eye">
-		          <div class="col-lg-3 col-md-3">
+		          <div class="col-lg-3 col-md-3 col-sm-3">
 		              <p  class="title">{{lang[lng].eye}}:</p>
 		          </div>
-		          <div class="col-lg-9 col-md-9">
+		          <div class="col-lg-9 col-md-9 col-sm-9">
 		            <div ng-repeat="eclr in eyecolors" class="color-block">
 		              <input type="radio" id="ecolor{{eclr.value}}" name="eyecolor" ng-model="$parent.choseEye" ng-value="eclr.value">
 		              <span for="ecolor{{eclr.value}}" class="color"><img src="img/colors/{{eclr.color}}.jpg" alt="lion-{{eclr.color}}"></span>
@@ -104,10 +104,10 @@
 		          </div>
 		        </div>
 		        <div class="row form-row beards">
-		          <div class="col-lg-3 col-md-3">
+		          <div class="col-lg-3 col-md-3 col-sm-3">
 		              <p  class="title">{{lang[lng].beard}}:</p>
 		          </div>
-		          <div class="col-lg-9 col-md-9">
+		          <div class="col-lg-9 col-md-9 col-sm-9">
 		            <div ng-repeat="bea in beard" class="beard-block">
 		              <input type="radio" id="color{{bea.value}}" name="beard" ng-model="$parent.chosebeard" ng-value="bea.value">
 		              <span for="beard{{bea.value}}" class="beard"><img src="img/beard/{{bea.shape}}.png" alt="lion-{{bea.shape}}"></span>
@@ -115,10 +115,10 @@
 		          </div>
 		        </div>
 		        <div class="row form-row bodies">
-		          <div class="col-lg-3 col-md-3">
+		          <div class="col-lg-3 col-md-3 col-sm-3">
 		              <p class="title">{{lang[lng].body}}:</p>
 		          </div>
-		          <div class="col-lg-9 col-md-9">
+		          <div class="col-lg-9 col-md-9 col-sm-9">
 		            <div ng-repeat="bod in bodies" class="body-block beard-block">
 		              <input type="radio" id="body{{bod.value}}" name="body" ng-model="$parent.chosebody" ng-value="bod.value">
 		              <span for="body{{bod.value}}" class="body"><img src="img/body/{{bod.shape}}.png" alt="lion-{{bod.shape}}"></span>
