@@ -95,14 +95,16 @@ mainApp.controller('lionCtrl', function($scope,$http) {
 		  	$scope.chosehair=0;
 		  	$scope.ageslider.value=20;
 		  	$scope.heighslider.value=170;
-		  	
+
 			$scope.result = $scope.total/4;
 		}else{
 			$scope.errors=1;
+			$scope.result=1;
 		}
 	};
 	$scope.closeResult=function(){
 		$scope.result = 0;
+		$scope.errors = 0;
 	};
 
  });
