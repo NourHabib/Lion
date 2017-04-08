@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
 	<title>Lion Calculator</title>
 	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/rzslider.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -118,6 +119,13 @@
 			              </div>
 			              <div ng-show="errors" class="theresult">
 			                <p class="error">Please fill all details</p>
+			              </div>
+			              <div ng-hide="errors" class="share">
+			                <ul>
+			                  <li class="facebook"><a href="https://www.facebook.com/sharer.php?u=http://kamelrechner.de/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			                  <li class="twitter"><a href="https://twitter.com/share?via=NourHabib&url=http://kamelrechner.de/&text=My friend is worth {{result | number : 0}} Lions."><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			                  <li class="whatsapp"><a href="whatsapp://send?text=My friend is worth {{result | number : 0}} Lions. http://kamelrechner.de/"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+			                </ul>
 			              </div>
 			            </div>
 		          </div>

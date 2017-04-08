@@ -218,3 +218,35 @@ div#content .container p{
     opacity:1;
     font-size:50px;
 }
+/* share buttons */
+.share{
+    display:table;
+    text-align:center;
+    margin:0 auto;
+}
+.share ul{
+    padding:0;
+}
+.share ul li{
+    display:inline-block;
+    text-align:center;
+    margin:10px; 
+}
+.share ul li i{
+    color:#fff;
+    font-size:40px;
+    text-align:center;
+       -webkit-transition: color ease-out;
+     -moz-transition: color 500ms ease-out;
+       -o-transition: color 500ms ease-out;
+          transition: color 500ms ease-out;
+}
+.share ul li.facebook:hover i{
+    color:#3b5999;
+}
+.share ul li.twitter:hover i{
+    color:#55acee;
+}
+.share ul li.whatsapp:hover i{
+    color:#25D366;
+}
