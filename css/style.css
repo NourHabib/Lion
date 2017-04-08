@@ -168,3 +168,9 @@ div#content .container p{
    opacity:0;
     transform:translate(70px);
 }
+input{
+    cursor: pointer;
+}
+*{
+    outline: none !important;
+}
