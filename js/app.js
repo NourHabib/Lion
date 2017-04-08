@@ -101,6 +101,8 @@ mainApp.controller('lionCtrl', function($scope,$http) {
 			$scope.errors=1;
 		}
 	};
-
+	$scope.closeResult=function(){
+		$scope.result = 0;
+	};
 
  });
