@@ -250,3 +250,13 @@ div#content .container p{
 .share ul li.whatsapp:hover i{
     color:#25D366;
 }
+/* footer */
+footer {
+    padding:20px;
+    background:rgba(0,0,0,0.2);
+}
+footer p{
+    text-align:center;
+    color:#fff;
+    text-transform:uppercase;
+}

@@ -4,6 +4,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<meta property="og:url"           content="http://mywebsite.com/index.html" />
+    <meta property="og:type"          content="http://mywebsite.com" />
+    <meta property="og:title"         content="Lion Calculator" />
+    <meta property="og:description"   content="Calculate how many lions for your frind" />
+    <meta property="og:image"         content="/img/logo.png" />
+    
 	<title>Lion Calculator</title>
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,6 +23,17 @@
 	<script src="js/app.js"></script>
 </head>
 <body>
+<!-- facebook plugin -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=820690547985432";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 	<div ng-controller="lionCtrl">
 		<header>
 	         <div class="container">
@@ -130,11 +147,13 @@
 			            </div>
 		          </div>
 		        </div>
+		        <div class="row form-row">
+		            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+		        </div>
         	</div>
-      	</div>
-      	
+      	</div>     	
       	<footer>
-			
+			<p>Developed by Nour Habib</p>
 		</footer>
 	</div>
 </body>
